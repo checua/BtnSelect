@@ -1,6 +1,5 @@
 package com.example.btnselect;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 public class Pop extends AppCompatActivity {
     @Override
