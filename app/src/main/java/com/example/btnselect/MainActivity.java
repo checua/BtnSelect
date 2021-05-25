@@ -2,6 +2,7 @@ package com.example.btnselect;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
@@ -42,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Fallaste", Toast.LENGTH_SHORT).show();
                 }
+            }
+
+        });
+
+        final Button button4 = findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Pop.class);
+                startActivity(i);
             }
 
         });
